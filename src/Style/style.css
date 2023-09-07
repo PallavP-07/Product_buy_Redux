@@ -1,0 +1,172 @@
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 270px;
+    border: 1px solid rgb(139, 139, 139);
+    padding: 15px;
+    margin: 5px;
+    box-shadow: 1px 8px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    background-color: rgba(255, 249, 243, 0.884);
+}
+
+.image img{
+    width: 170px;
+    height: 90px;
+}
+.details p{
+  
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 5; /* Adjust the number of lines you want to display */
+    /* The above 3 lines are necessary for cross-browser compatibility */
+    max-height: 4em;
+}
+.details h2{
+    font-size: 12px;
+}
+.action{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.action button{
+    width: auto;
+    padding: 7px;
+    margin: 5px;
+    background-color: rgb(20, 20, 255);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.action h3{
+    display: flex;
+    align-items: center;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(128, 128, 128);
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1); 
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(231, 231, 231);
+}
+.picture img{
+    width: 150px;
+}
+.picture {
+    display: flex;
+}
+.Title h2{
+    font-size: 12px;
+}
+.Title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style-type: none;
+    font-weight: bold;
+}
+.ink{
+    display: flex;
+   
+}
+.all{
+    display: flex;
+    flex-direction: column;
+}
+
+/* src/Modal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: rgb(240, 223, 149);
+    width: 90%;
+    max-height: 80vh; /* Set a maximum height for the scrollable area */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Add scroll bar when content exceeds max-height */
+  }
+  
+  .close-button {
+    width: auto;
+    padding: 7px;
+    margin: 5px;
+    background-color: rgb(255, 251, 23);
+    border: none;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+  }
+  .checkout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .checkout button{
+    width: auto;
+    padding: 7px;
+    margin: 5px;
+    background-color: rgb(17, 150, 0);
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+  }
+  .checkout p{
+    background-color: darkblue;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 7px;
+    color: white;
+  }
+
+
+
+  /* Apply responsive styles for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    .content {
+      justify-content: flex-start; /* Align items in a column */
+    }
+    .main {
+      width: 100%; /* Expand width to fill the container */
+      height: auto; /* Let height adjust based on content */
+      margin: 10px 0; /* Add some vertical space between items */
+    }
+    .image img {
+      width: 100%; /* Make images fill the container */
+      height: auto; /* Maintain aspect ratio */
+    }
+    .details h2 {
+      font-size: 14px; /* Increase font size for better readability */
+    }
+    .action {
+      flex-direction: column; /* Stack buttons and price below each other */
+      align-items: flex-start; /* Align items to the left */
+    }
+    .action button {
+      width: 100%; /* Make buttons fill the container */
+    }
+  }
+  
